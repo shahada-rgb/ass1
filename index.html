@@ -7,61 +7,102 @@
   <title>Fatimath Shahada Portfolio</title>
   <link rel="stylesheet" href="css/index.css" />
   <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
   <header>
     <nav>
+      <div class="logo">SHAHADA</div>
+      <div class="nav-links">
+      <a href="#home">Home</a>
       <a href="#about-me">About Me</a>
       <a href="#projects">Projects</a>
       <a href="#contacts">Contact</a>
+      </div>
     </nav>
+    
   </header>
-
+ <!-- more section -->
   <main>
-    <section id="about-me">
+    <section class="hero " id="home">
+      <div class="hero-content">
+        <h1>Hi, I'm <span>Fathimath shahada</span><br>web developer</h1>
+        <p>
+           I’m a junior web development and i Create  immersive digital web Technologies. My passion is turning ideas into int
+          . I recently graduated with a degree in BCA from MG University.
+          I’m passionate about learning new skills, and my goal is to become a full-stack web developer and work on
+          creative, impactful projects.
+        </p>
+        <a href="#contacts" class="cta-button">Get in Touch</a>
+       
+
+      </div>
+
+      <div class="profile-container">
+        <div class="profile-border"></div>
+        <img src="images\WhatsApp Image 2025-08-03 at 16.05.52_d072da85.jpg" alt="Fatimath Shahada" width="300" height="300" />
+      </div>
+    </section>
+    <!-- <section class="about" id="about-me">
       <h2><span>About Me</span></h2>
-      <img src="images/IMG-20220912-WA0064.jpg" alt="Fatimath Shahada" width="300" height="300" />
-      <p>
-        My name is <span>Fatimath Shahada</span>. I'm from Malappuram. I’m a beginner in web development and currently
-        studying the MERN stack. I recently graduated with a degree in BCA from MG University.
-        I’m passionate about learning new skills, and my goal is to become a full-stack web developer and work on
-        creative, impactful projects.
-      </p>
-    </section>
-
+      
+     
+    </section> -->
+<!-- card section -->
     <section id="projects">
-      <h2>Projects</h2>
+      <h2 class="section-title"> My Projects</h2>
+      <div class="project-container">
+        <div class="row">
+          <!-- 1st crad  -->
 
-      <article>
-        <h3>EntryPass</h3>
-        <p>
-          <strong>EntryPass – Online Event Ticket Booking System</strong><br />
-          <em>Technologies:</em> PHP, MySQL, CSS<br />
-          Designed and developed a full-stack web application for event registration and ticketing. Implemented modules
-          for Admin (approval & user management), Department (event handling), and Audience (booking/canceling).
-          Performed manual testing for usability and bug tracking.
-        </p>
-      </article>
+          <div class="col-md-6 mb-4 d-flex align-items-stretch">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://th.bing.com/th?q=Coupon+for+Entry+Pass&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="Card image cap" width="288px">
+              <div class="card-body">
+                <h5 class="card-title">EntryPass</h5>
+                <p class="card-text"><strong>EntryPass – Online Event Ticket Booking System</strong><br />
+                <em>Technologies:</em> PHP, MySQL, CSS<br />
+                Designed and developed a full-stack web application for event registration and ticketing. Implemented modules
+                for Admin (approval & user management), Department (event handling), and Audience (booking/canceling).
+                Performed manual testing for usability and bug tracking.
+                </p>
+                
+              </div>
+            </div>
+          </div>
 
-      <article>
-        <h3>Platemate AI</h3>
-        <p>
-          <strong>Platemate AI – Food Recipe Recommendation System</strong><br />
-          <em>Technologies:</em> Python, Django, NLP (TF-IDF, Linear Kernel), Chatbot<br />
-          Built a smart web application to recommend recipes based on ingredients using NLP. Developed using Django with
-          chatbot and interactive front-end modules. Added features like user comments, health tips, and recipe video
-          uploads.
-        </p>
-      </article>
+          <!-- 2nd card -->
+          <div class="col-md-6 mb-4 d-flex align-items-stretch">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://mir-s3-cdn-cf.behance.net/projects/max_808/0581b3170169219.Y3JvcCwxNDAwLDEwOTUsMCww.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Platemate AI</h5>
+                <p class="card-text"><strong>Platemate AI – Food Recipe Recommendation System</strong><br />
+                <em>Technologies:</em> Python, Django, NLP (TF-IDF, Linear Kernel), Chatbot<br />
+                Built a smart web application to recommend recipes based on ingredients using NLP. Developed using Django with
+                chatbot and interactive front-end modules. Added features like user comments, health tips, and recipe video
+                uploads..
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
+    
   </main>
 
   <footer>
-    <section id="contacts">
-      <h2>Contact</h2>
-      <form action="#">
+    <section  class="contact" id="contacts">
+      <div class="col-md-6">
+      <h2 class="section-title">Contact</h2>
+      <form action="#" method="post">
         <input type="text" name="name" placeholder="Your Name" required minlength="3" /><br /><br />
         <input type="email" name="email" placeholder="example@gmail.com" required /><br /><br />
         <input type="text" name="subject" placeholder="Subject" required /><br /><br />
@@ -75,7 +116,9 @@
         <a href="mailto:academic@gmail.com">abc@gmail.com</a>
       </address>
     </section>
+    </div>
   </footer>
+  
 
 </body>
 
