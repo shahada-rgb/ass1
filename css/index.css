@@ -343,54 +343,87 @@ p span {
 form input,
 form textarea {
   width: 90%;
-  padding: 10px;
+  padding: 0.8rem 1rem;
   margin-bottom: 10px;
-  border: 2px solid #b0e0ed;
+  border: 2px solid #0c0c0c;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 1rem;
   transition: border-color 0.3s ease;
   backdrop-filter: blur(10px);
-  z-index: 100;
+  z-index: 100; 
   
-}
+ }
 
 
-
-form input:focus,
+ form input:focus,
 form textarea:focus {
-  border-color: #0077cc;
+  border-color:var(--neon-blue);
+  box-shadow: 0 0 10px rgba(0,136,255,0.3);
   outline: none;
-}
+} 
 
 /* Buttons */
 button {
-  background: #0077cc;
-  color: white;
+  background: linear-gradient(90deg,var(--neon-green),var(--neon-blue),var(--neon-pink));
+  color: rgb(21, 20, 20);
   border: none;
-  padding: 10px 20px;
+  font-weight: 700;
+  max-width: 726px;
+
+  padding: 1rem;
   font-size: 16px;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-  background: #005fa3;
-  transform: scale(1.05);
+  
+  transform: translatex(3px);
+  box-shadow: 0 0 25px rgba(0, 255, 208, 0.5);
+  color: #1e1f1e;
+}
+.form-group{
+  display:flex;
+  flex-direction: column;
+  gap:0.5rem;
 }
 
-/* Footer */
-/* footer {
+.contact{
+  padding:5rem 6% ;
+  position:relative ;
+
+}
+
+.contact-form{
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  
+ 
+
+}
+
+/* Footer
+footer {
   background: #2c3e50;
   color: rgb(11, 227, 230);
   text-align: center;
   padding: 20px 0;
 } */
 
+address{
+  text-align: center;
+  padding: 5%;
+}
+
 address a {
   color: lightblue;
   transform: scale(1.05);
-  text-align: center;
+  text-align: left;
+  
+  margin-left: 2px; ;
+ 
   
   transition: transform 0.3s ease;
 }
