@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fatimath Shahada Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons (optional) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
   <link rel="stylesheet" href="css/index.css" />
   <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -15,7 +19,14 @@
 <body>
 
   <header>
+    
     <nav>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span> 
+        <i class="fas fa-stream"> </i>
+      </button> -->
+
       <div class="logo">SHAHADA</div>
       <div class="nav-links">
       <a href="#home">Home</a>
@@ -25,42 +36,73 @@
       </div>
     </nav>
     
+    
   </header>
- <!-- more section -->
-  <main>
-    <section class="hero " id="home">
-      <div class=" col-md-4 col-4 hero-content">
-        <h1>Hi, I'm <span>Fathimath shahada</span><br>web developer</h1>
-        <p>
-           I’m a junior web development and i Create  immersive digital web Technologies. My passion is turning ideas into int
-          . I recently graduated with a degree in BCA from MG University.
-          I’m passionate about learning new skills, and my goal is to become a full-stack web developer and work on
-          creative, impactful projects.
-        </p>
-        <a href="#contacts" class="cta-button">Get in Touch</a>
-       
+
+  <!-- banner secetion -->
+   <section id="home" class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center text-md-start " >
+          <h6 class="welcome">WELCOME TO MY WORLD</h6>
+          <h1>Hi, I'm <span>Fathimath shahada</span><br>web developer</h1>
+          <div class="mt-4">
+            <a class="main-btn" href="">Download CV</a>
+          </div>
+        </div> 
 
       </div>
+    </div>
+   </section>
+ <!-- about section -->
+  <main>
 
-      <div class="profile-container">
-        <div class="profile-border"></div>
-        <img src="images\WhatsApp Image 2025-08-03 at 16.05.52_d072da85.jpg" alt="Fatimath Shahada" width="300" height="300" />
+ 
+    
+      <!-- <div class="product-list d-flex px-7 my-5"> -->
+
+    <section id="about" class="py-5  about-wrapper ">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Column: Image -->
+          <div class="col-md-5 mb-4 mb-md-0">
+            <img src="/images/WhatsApp Image 2025-08-17 at 21.57.54_7ada9136.jpg" alt="Fathimath Shahada" class="img-fluid rounded shadow">
+          </div>
+    
+          <!-- Right Column: Text -->
+          <div class="col-md-7">
+            <h2 class="mb-3">About Me</h2>
+            <p>
+              I'm Fathimath Shahada, a junior web developer passionate about crafting immersive digital experiences. I
+              recently earned my BCA degree from MG University, and I'm on a mission to become a full-stack developer.
+            </p>
+            <p>
+              My journey into web development began with a fascination for how design meets functionality. I love turning
+              ideas into interactive, user-friendly websites using technologies like HTML, CSS, Bootstrap, and JavaScript.
+              I'm currently exploring backend frameworks like Django to expand my skill set.
+            </p>
+            <p>
+              I thrive on learning, experimenting, and building projects that make a difference. Whether it's a ticket
+              booking system or a smart recipe recommender, I aim to create solutions that are both beautiful and impactful.
+            </p>
+            <a href="#contact" class="btn btn-primary mt-3 main-btn">Get in Touch</a>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- <section class="about" id="about-me">
-      <h2><span>About Me</span></h2>
-      
+
      
-    </section> -->
+    
 <!-- card section -->
     <section id="projects">
       <h2 class="section-title"> My Projects</h2>
       <div class="project-container">
-        <div class="row">
+        <div class="row ">
+          <div class="card-items">
           <!-- 1st crad  -->
 
-          <div class="col-md-6 mb-4 d-flex align-items-stretch">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-4 col-12 mb-4 d-flex align-items-stretch">
+            <div class="card mb-4 shadow-sm" style="width: 18rem;">
               <img class="card-img-top" src="https://th.bing.com/th?q=Coupon+for+Entry+Pass&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="Card image cap" width="288px">
               <div class="card-body">
                 <h5 class="card-title">EntryPass</h5>
@@ -70,13 +112,14 @@
                 for Admin (approval & user management), Department (event handling), and Audience (booking/canceling).
                 Performed manual testing for usability and bug tracking.
                 </p>
+                <a href="#" class="btn btn-outline-primary">view project</a>
                 
               </div>
             </div>
           </div>
 
           <!-- 2nd card -->
-          <div class="col-md-6 mb-4 d-flex align-items-stretch">
+          <div class="col-md-4  col-12 mb-4 d-flex align-items-stretch">
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="https://mir-s3-cdn-cf.behance.net/projects/max_808/0581b3170169219.Y3JvcCwxNDAwLDEwOTUsMCww.png" alt="Card image cap">
               <div class="card-body">
@@ -87,12 +130,13 @@
                 chatbot and interactive front-end modules. Added features like user comments, health tips, and recipe video
                 uploads..
                 </p>
+                <a href="#" class="btn btn-outline-primary">view project</a>
                 
               </div>
             </div>
           </div>
         </div>
-
+        </div>
       </div>
     </section>
     
@@ -100,25 +144,60 @@
 
   <footer>
     <section  class="contact" id="contacts">
-      <div class="col-md-4">
+      <div class="col-md-12">
       <h2 class="section-title">Contact</h2>
-      <form action="#" method="post" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required minlength="3"  class="form-group" label="name"/><br /><br />
-        <input type="email" name="email" label="email" class="form-group" placeholder="example@gmail.com" required /><br /><br />
-        <input type="text" name="subject"  class="form-group" placeholder="Subject" required /><br /><br />
-        <textarea name="message" id="message" rows="5"  class="form-group" placeholder="Leave your message here..." required
-          minlength="8"></textarea><br /><br />
+      <form action="#" method="post "id="contact-form" class="contact-form">
+       <div class="mb-3">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" placeholder="Your Name" required minlength="3" class="form-group"
+          label="name" />
+       </div>
+        <div class="mb-3"><label for="email">Email</label>
+        <input type="email" name="email" label="email" class="form-group" placeholder="example@gmail.com"
+          required /></div>
+        <div class="mb-3"><label for="subject">Subject</label>
+        <input type="text" name="subject" class="form-group" placeholder="Subject" required /></div>
+        <div class="mb-3"><label for="message">message</label>
+        <textarea name="message" id="message" rows="5" class="form-group" placeholder="Leave your message here..." required
+          minlength="8"></textarea></div>
         <button type="submit" class="submit-btn">Send</button>
       </form>
+      <div id="confirmationmessage" class="mt-3 text-success" style="display:none;">
+        ✅ Thank you! Your message has been sent.
+      </div>
 
-      <address>
-        <h5>Send Mail:</h5>
-        <a href="mailto:academic@gmail.com">abc@gmail.com</a>
-      </address>
+      
+      
     </section>
     </div>
+    <a href="#top" class="btn btn-outline-light mt-3">Back to Top</a>
+
+
+    
   </footer>
-  
+  <div class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-1">© 2025 Fathimath Shahada. All rights reserved.</p>
+      <p class="mb-0">
+        <a href="mailto:shahadashazz9@gmail.com" class="text-white text-decoration-none">shahadashazz9@gmail.com</a>
+      </p>
+      <div class="mt-2">
+        <a href="https://github.com/yourusername" target="_blank" class="text-white me-3"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-white"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS -->
+   
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent actual form submission
+      document.getElementById("confirmationMessage").style.display = "block";
+      this.reset(); // Optional: clear the form
+    });
+  </script>
 
 </body>
 
